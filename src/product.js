@@ -128,8 +128,12 @@ export default class product extends Component {
                 {
                     this.state.isConflict ?
                     (
-                        <h1>Status: Conflict</h1>
-                    ):"not Conflict"
+                        <div className="m-5">
+                            <ul className="alert alert-danger">
+                                <li><h3>Conflict</h3></li>
+                            </ul>
+                        </div>
+                    ):""
                 }
                 <h1 className="mt-5">SelectedSchedule</h1>
                 <table className="table table-striped">
